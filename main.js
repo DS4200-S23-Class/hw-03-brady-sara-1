@@ -2,13 +2,13 @@
 // button function
 let count = 1;
 function buttonClicked() {
-	let header = document.getElementById("header");
+	let texts = document.getElementById("visualizations");
 	if (count == 1) {
-		header.style.color = "blue";
+		texts.style.color = "blue";
 		count = 0;
 	}
 	else {
-		header.style.color = "black";
+		texts.style.color = "black";
 		count = 1;
 	}
 }
