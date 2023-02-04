@@ -15,11 +15,15 @@
 <body>
     
 <!-- add header -->
-<h1 class="centered">hw-03: Interactive Webpage, and Marks & Channels
+<h1 id="header" class="centered">hw-03: Interactive Webpage, and Marks & Channels
 </h1>
+
+<!-- Extra-credit button -->
+<button type="button" onClick="buttonClicked()">Click me!</button>
 
 <!-- create 2 columns -->
     <div id="visualizations">
+
         <div class="flex-container">
             <div class="flex-item">
                 <!-- add image to left column -->
@@ -31,32 +35,36 @@
                 <h3>Marks</h3>
                 <!-- lists for the mapping reasoning -->
                 <ul>
-                    <li>mark 1</li>
-                    <li>mark 2</li>
-                    <li>...</li>
+                    <li>Area</li>
                 </ul>
+                <!-- Channels and reasons -->
                 <h3>Channels</h3>
                 <ul>
-                    <li>channel 1</li>
+                    <li>Color (Color Hue)</li>
                     <ul>
-                        <li>represents...</li>
+                        <li>Represents a categorical attribute type showing the political party that has won in the state. Red being republican voting for Trump and blue being democratic voting for Clinton. When it is multicolored, like Nebraska, it means the electoral votes were split.</li>
+                        <li> This is a good choice as it can specifically show which party has won and where.
+                        </li>
                     </ul>
-                    <li>channel 2</li>
+                    <li>Position (both horizontal and vertical)</li>
                     <ul>
-                        <li>represents...</li>
+                        <li>Represents a categorical attribute type showing the positions of all the states on the map. This is helpful to show regions of states that vote similarly on the map.</li>
+                        <li>This is a good choice as it clearly shows the user where the states are in the US to see the differences.</li>
                     </ul>
-                    <li>...</li>
                 </ul>
+                <!-- Colormaps and reasons -->
                 <h3>Colormap(s)</h3>
                 <ul>
-                    <li>colormap 1</li>
+                    <li>Categorical</li>
                     <ul>
-                        <li>represents...</li>
+                        <li>Represents a categorical attribute of two different sides between red and blue or Trump vs Clinton.</li>
+                        <li> This is a good choice as it clearly shows the two different parties in the election. The colors are the same as what the parties national colors are. And the colors are different enough to clearly see when they are different.</li>
+
                     </ul>
-                    <li>...</li>
                 </ul>
             </div>
         </div>
+
         <!-- create another flexbox for image 2 -->
         <div class="flex-container">
             <div class="flex-item">
@@ -69,29 +77,35 @@
                 <h3>Marks</h3>
                 <!-- create lists for the mapping -->
                 <ul>
-                    <li>mark 1</li>
-                    <li>mark 2</li>
-                    <li>...</li>
+                    <li>Points</li>
                 </ul>
+                <!-- Channels and reasons -->
                 <h3>Channels</h3>
                 <ul>
-                    <li>channel 1</li>
+                    <li>Position (both horizontal and verticle)</li>
                     <ul>
-                        <li>represents...</li>
+                        <li>Represents an ordered attribute type showing a baseball's launch angle and exit velocity.This determines where the ball goes and if it ended up being a ground ball, line drive, home run, fly ball, or pop-up.</li>
+                        <li>This is a good choice as it shows both attributes of angle and speed for each ball and where it falls on the scale of being from a ground ball to a pop-up.</li>
                     </ul>
-                    <li>channel 2</li>
+                    <li>Color (Hue)</li>
                     <ul>
-                        <li>represents...</li>
+                        <li>Represents a categorical attribute of Below or above the average LWTS on the scoring value meter. This is represented through Purple or Orange</li>
+                        <li>This is a good choice to split the colors up to show the best types of hits on the baseball. It is easy to see That the homeruns are in Orange while the ground balls or pop ups are in purple.</li>
                     </ul>
-                    <li>...</li>
+                    <li>Color (Saturation)</li>
+                    <ul>
+                        <li>Represents an ordinal attribute of the value around the scoring value meter. Showing how much below, how close to the average, or how much above each hit is.</li>
+                        <li> This is a good choice to show as you are able to see the divides leading up to the different scoring values. So the purple and orange points become lighter as the become closer to eachother. But in their most prevelant areas like in the home runs or pop-ups, the colors are much darker.</li>
+                    </ul>
                 </ul>
+                <!-- Colormaps and reasons -->
                 <h3>Colormap(s)</h3>
                 <ul>
-                    <li>colormap 1</li>
+                    <li>Divergent colormap</li>
                     <ul>
-                        <li>represents...</li>
+                        <li>Represents an ordered attribute type of different scoring values of the LWTS.</li>
+                        <li>This is a good choice as it can show clearly if a batted ball is below average, average, or above average by showing purple, white, or orange. And it can also contain the shades of these to show the levels and how close or far apart each datapoint is from eachother on the scoring value.</li>
                     </ul>
-                    <li>...</li>
                 </ul>
             </div>
         </div>
