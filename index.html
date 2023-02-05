@@ -126,29 +126,24 @@
                 <!-- Channels and reasons -->
                 <h3>Channels</h3>
                 <ul>
-                    <li>CHANGE THESEPosition (both horizontal and verticle)</li>
+                    <li>Position (both horizontal and verticle)</li>
                     <ul>
-                        <li>Represents an ordered attribute type showing a baseball's launch angle and exit velocity.This determines where the ball goes and if it ended up being a ground ball, line drive, home run, fly ball, or pop-up.</li>
-                        <li>This is a good choice as it shows both attributes of angle and speed for each ball and where it falls on the scale of being from a ground ball to a pop-up.</li>
-                    </ul>
-                    <li>Color (Hue)</li>
-                    <ul>
-                        <li>Represents a categorical attribute of Below or above the average LWTS on the scoring value meter. This is represented through Purple or Orange</li>
-                        <li>This is a good choice to split the colors up to show the best types of hits on the baseball. It is easy to see That the homeruns are in Orange while the ground balls or pop ups are in purple.</li>
+                        <li>Represents a ordered attribute type showing emissions levels and combined miles per gallon. The horizontal position represents combined mpg, and the vertical position represents emissions levels.</li>
+                        <li>This is a good choice because position on a common scale is high on the effectiveness level. The axes help to make it easy to judge where the points are on the scale.</li>
                     </ul>
                     <li>Color (Saturation)</li>
                     <ul>
-                        <li>Represents an ordinal attribute of the value around the scoring value meter. Showing how much below, how close to the average, or how much above each hit is.</li>
-                        <li> This is a good choice to show as you are able to see the divides leading up to the different scoring values. So the purple and orange points become lighter as the become closer to eachother. But in their most prevelant areas like in the home runs or pop-ups, the colors are much darker.</li>
+                        <li>Represents an ordered attribute of engine size of the vehicle.</li>
+                        <li>This is an okay choice because color saturation isn't very high on the effectiveness level, and the specific saturation of the colors is not very easy to see on the visualization.</li>
                     </ul>
                 </ul>
                 <!-- Colormaps and reasons -->
                 <h3>Colormap(s)</h3>
                 <ul>
-                    <li>Divergent colormap</li>
+                    <li>Sequential colormap</li>
                     <ul>
-                        <li>Represents an ordered attribute type of different scoring values of the LWTS.</li>
-                        <li>This is a good choice as it can show clearly if a batted ball is below average, average, or above average by showing purple, white, or orange. And it can also contain the shades of these to show the levels and how close or far apart each datapoint is from eachother on the scoring value.</li>
+                        <li>Represents a quantitative attribute type of engine size.</li>
+                        <li>This is a good choice because the difference between the high end of the engine sizes and the low end is easy to see. However, the only thing that could be changed is having the darker color correspond to a greater engine size as we often think of darker as more.</li>
                     </ul>
                 </ul>
             </div>
@@ -161,8 +156,8 @@
 <h1 class="centered">Acknowledgements</h1>
 <div id="acknowledgements">
     <ul>
-        <li>https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById</li>
-        <li>https://www.kaggle.com/datasets/ahmettyilmazz/fuel-consumption?resource=download</li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById">getElementByID Documentation</a></li>
+        <li><a href="https://www.kaggle.com/datasets/ahmettyilmazz/fuel-consumption?resource=download">Dataset for Visualization</a></li>
     </ul>
 </div>
 
