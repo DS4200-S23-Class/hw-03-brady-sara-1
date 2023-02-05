@@ -109,6 +109,50 @@
                 </ul>
             </div>
         </div>
+            <!-- create another flexbox for visualization 3 -->
+        <div class="flex-container">
+            <div class="flex-item">
+                <!-- add viz to left column -->
+                <img src="img/viz.png">
+            </div>
+            <!-- right column -->
+            <div class="flex-item">
+                <!-- add headers for different lists -->
+                <h3>Marks</h3>
+                <!-- create lists for the mapping -->
+                <ul>
+                    <li>Points</li>
+                </ul>
+                <!-- Channels and reasons -->
+                <h3>Channels</h3>
+                <ul>
+                    <li>CHANGE THESEPosition (both horizontal and verticle)</li>
+                    <ul>
+                        <li>Represents an ordered attribute type showing a baseball's launch angle and exit velocity.This determines where the ball goes and if it ended up being a ground ball, line drive, home run, fly ball, or pop-up.</li>
+                        <li>This is a good choice as it shows both attributes of angle and speed for each ball and where it falls on the scale of being from a ground ball to a pop-up.</li>
+                    </ul>
+                    <li>Color (Hue)</li>
+                    <ul>
+                        <li>Represents a categorical attribute of Below or above the average LWTS on the scoring value meter. This is represented through Purple or Orange</li>
+                        <li>This is a good choice to split the colors up to show the best types of hits on the baseball. It is easy to see That the homeruns are in Orange while the ground balls or pop ups are in purple.</li>
+                    </ul>
+                    <li>Color (Saturation)</li>
+                    <ul>
+                        <li>Represents an ordinal attribute of the value around the scoring value meter. Showing how much below, how close to the average, or how much above each hit is.</li>
+                        <li> This is a good choice to show as you are able to see the divides leading up to the different scoring values. So the purple and orange points become lighter as the become closer to eachother. But in their most prevelant areas like in the home runs or pop-ups, the colors are much darker.</li>
+                    </ul>
+                </ul>
+                <!-- Colormaps and reasons -->
+                <h3>Colormap(s)</h3>
+                <ul>
+                    <li>Divergent colormap</li>
+                    <ul>
+                        <li>Represents an ordered attribute type of different scoring values of the LWTS.</li>
+                        <li>This is a good choice as it can show clearly if a batted ball is below average, average, or above average by showing purple, white, or orange. And it can also contain the shades of these to show the levels and how close or far apart each datapoint is from eachother on the scoring value.</li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
 
 
     </div>
@@ -118,6 +162,7 @@
 <div id="acknowledgements">
     <ul>
         <li>https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById</li>
+        <li>https://www.kaggle.com/datasets/ahmettyilmazz/fuel-consumption?resource=download</li>
     </ul>
 </div>
 
